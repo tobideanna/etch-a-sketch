@@ -48,3 +48,9 @@ function clearGrid() {
         square.remove();
     });
 }
+
+const resetButton = document.querySelector("#reset-button")
+resetButton.addEventListener("click", () => {
+    clearGrid()
+    createGrid(16)
+})
